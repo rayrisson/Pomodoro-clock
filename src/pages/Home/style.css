@@ -1,0 +1,30 @@
+:root {
+    --red-default: rgb(255, 36, 36);
+    --green-default: rgb(46, 173, 46);
+    --orange-default: rgb(248, 175, 38);
+    --gray-default: rgb(119, 119, 119);
+    --size-button: 3rem;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.Home .Buttons {
+    display: flex;
+    gap: 5rem;
+}
+
+.Home .Buttons .DefaultButton:first-of-type,
+.Home .Buttons .DefaultButton:last-of-type {
+    transform: translateY(-4rem);
+}
+
+/*
+.StartButton:nth-child(2){
+    transform: translateX(8rem);
+}*/

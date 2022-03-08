@@ -1,0 +1,33 @@
+.DefaultButton {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: var(--green-default);
+    width: var(--size-button);
+    height: var(--size-button);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    /*font-size: 32;*/
+}
+
+.DefaultButton span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 50s;
+    animation: rotate-and-surge 1s;
+}
+
+@keyframes rotate-and-surge{
+    from{
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+    to{
+        opacity: 100;
+        transform: rotate(0deg);
+    }
+}
